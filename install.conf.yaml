@@ -74,7 +74,6 @@
       stdout: true
       description: Installing Nodejs 16 LTS
 
-    - [echo "Installation completed. If you see that messages - probably all should work."]
     - [cat ./configs/gterminal.preferences| dconf load /org/gnome/terminal/, Set gnome-terminal preferences]
 
     - command: ./bash-scripts/zsh-config.sh
