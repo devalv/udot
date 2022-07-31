@@ -16,11 +16,15 @@
     ~/.cookiecutterrc: configs/cookiecutterrc
     ~/.editorconfig: configs/editorconfig
     ~/.flake8: configs/flake8
-    ~/.gitconfig: configs/gitconfig
-    ~/.vimrc: configs/vimrc
-    ~/.zshrc: 
+    ~/.gitconfig: 
+      force: true
+      path: configs/gitconfig
+    ~/.vimrc: 
       force: true
       path: configs/vimrc
+    ~/.zshrc: 
+      force: true
+      path: configs/zshrc
 
 - shell:
     - [git submodule update --init --recursive, Fetching dotbot submodules]
