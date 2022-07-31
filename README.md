@@ -1,6 +1,6 @@
 # Aleksei Devyatkin`s dotfiles
 
-This is a bootstrap of my working setup based on Ubuntu linux.
+This is a bootstrap of my working setup based on Ubuntu linux (22 LTS).
 Bootstrap is based on the awesome [Dotbot](https://github.com/anishathalye/dotbot).
 
 ## Installation
