@@ -1,0 +1,18 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    cursor_color = "#aaaaaa"
+    font = Fira Code Medium 12
+    foreground_color = "#839496"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

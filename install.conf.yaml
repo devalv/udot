@@ -1,0 +1,79 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+
+- create:
+    - ~/.config
+    - ~/.config/terminator
+
+- link:
+    ~/.config/terminator/config:
+      force: true
+      path: terminator/config
+    ~/.cookiecutterrc: configs/cookiecutterrc
+    ~/.editorconfig: configs/editorconfig
+    ~/.flake8: configs/flake8
+    ~/.gitconfig: configs/gitconfig
+    ~/.vimrc: configs/vimrc
+    ~/.zshrc: 
+      force: true
+      path: configs/vimrc
+
+- shell:
+    - [git submodule update --init --recursive, Fetching dotbot submodules]
+
+    - command: sudo ./bash-sripts/core-utils.sh
+      stdin: true
+      stdout: true
+      description: Installing core utils
+
+    - command: ./bash-scripts/docker-install.sh
+      stdin: true
+      stdout: true
+      description: Installing docker
+
+    - command: ./bash-scripts/kube-utils.sh
+      stdin: true
+      stdout: true
+      description: Installing kube utils
+
+    - command: ./bash-scripts/zsh-config.sh
+      stdin: true
+      stdout: true
+      description: Configure ZSH
+
+    - command: ./bash-scripts/python-stuff.sh
+      stdin: true
+      stdout: true
+      description: Installing Python stuff
+
+    - command: ./bash-scripts/go-stuff.sh
+      stdin: true
+      stdout: true
+      description: Installing Go stuff
+
+    - command: ./bash-scripts/vim-plugins.sh
+      stdin: true
+      stdout: true
+      description: Vim plugins installation
+
+    - command: ./bash-scripts/install-extra-utils.sh
+      stdin: true
+      stdout: true
+      description: Installing extra utils (chrome, lens, etc)
+
+    - command: ./bash-scripts/install-snap-utils.sh
+      stdin: true
+      stdout: true
+      description: Installing snap packages
+
+    - command: ./bash-scripts/js-stuff.sh
+      stding: true
+      stdout: true
+      description: Installing Nodejs 16 LTS
+
+    - [echo "Installation completed. If you see that messages - probably all should work."]
+    - [cat ./configs/gterminal.preferences| dconf load /org/gnome/terminal/, Set gnome-terminal preferences]
