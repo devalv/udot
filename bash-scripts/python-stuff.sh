@@ -34,4 +34,7 @@ echo "add poetry completion for zsh"
 mkdir $ZSH_CUSTOM/plugins/poetry
 ~/.poetry/bin/poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 
+echo "install my zshrc back"
+mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
+
 exit 0
