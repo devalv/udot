@@ -44,11 +44,6 @@
       stdout: true
       description: Installing kube utils
 
-    - command: ./bash-scripts/zsh-config.sh
-      stdin: true
-      stdout: true
-      description: Configure ZSH
-
     - command: ./bash-scripts/python-stuff.sh
       stdin: true
       stdout: true
@@ -81,3 +76,8 @@
 
     - [echo "Installation completed. If you see that messages - probably all should work."]
     - [cat ./configs/gterminal.preferences| dconf load /org/gnome/terminal/, Set gnome-terminal preferences]
+
+    - command: ./bash-scripts/zsh-config.sh
+      stdin: true
+      stdout: true
+      description: Configure ZSH
