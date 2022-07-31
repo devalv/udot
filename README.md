@@ -33,4 +33,4 @@ The default console editor is **vim**.
 * Goimports
 
 ### Js
-TODO: add later
+* Nodejs 16 LTS
