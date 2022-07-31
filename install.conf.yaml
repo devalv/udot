@@ -12,7 +12,7 @@
 - link:
     ~/.config/terminator/config:
       force: true
-      path: terminator/config
+      path: configs/terminator/config
     ~/.cookiecutterrc: configs/cookiecutterrc
     ~/.editorconfig: configs/editorconfig
     ~/.flake8: configs/flake8
