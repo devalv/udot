@@ -35,37 +35,33 @@
       stdout: true
       description: Installing docker
       
-    - command: ./bash-scripts/install-extra-utils.sh
-      stdin: true
-      stdout: true
-      description: Installing extra utils (chrome, lens, etc)
-
-    - command: ./bash-scripts/install-snap-utils.sh
-      stdin: true
-      stdout: true
-      description: Installing snap packages
+#     - command: ./bash-scripts/install-extra-utils.sh
+#       stdin: true
+#       stdout: true
+#       description: Installing extra utils (chrome, lens, etc)
+#     - command: ./bash-scripts/install-snap-utils.sh
+#       stdin: true
+#       stdout: true
+#       description: Installing snap packages
+#     - command: ./bash-scripts/kube-utils.sh
+#       stdin: true
+#       stdout: true
+#       description: Installing kube utils
+#     - command: ./bash-scripts/vim-plugins.sh
+#       stdin: true
+#       stdout: true
+#       description: Vim plugins installation
 
     - command: ./bash-scripts/js-stuff.sh
       stding: true
       stdout: true
       description: Installing Nodejs 16 LTS
 
-    - command: ./bash-scripts/kube-utils.sh
-      stdin: true
-      stdout: true
-      description: Installing kube utils
-
-
     - command: ./bash-scripts/go-stuff.sh
       stdin: true
       stdout: true
       description: Installing Go stuff
-
-    - command: ./bash-scripts/vim-plugins.sh
-      stdin: true
-      stdout: true
-      description: Vim plugins installation
-          
+         
     - command: ./bash-scripts/zsh-config.sh
       stdin: true
       stdout: true
