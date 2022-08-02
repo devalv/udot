@@ -21,11 +21,12 @@ rm -rf /home/$USER/.pyenv
 echo "installing pyenv"
 curl https://pyenv.run | bash
 
-echo "installing python 3.10.5 via pyenv"
-/home/$USER/.pyenv/bin/pyenv install 3.10.5 -s
+#TODO: disable pyenv by default?
+#echo "installing python 3.10.5 via pyenv"
+#/home/$USER/.pyenv/bin/pyenv install 3.10.5 -s
 
-echo "Set Python 3.10.5 as global interpeter"
-/home/$USER/.pyenv/bin/pyenv global 3.10.5
+#echo "Set Python 3.10.5 as global interpeter"
+#/home/$USER/.pyenv/bin/pyenv global 3.10.5
 
 echo "installing poetry"
 [ -z "$(dpkg -s poetry)" ] && curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
