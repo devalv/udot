@@ -29,6 +29,7 @@
 - shell:
     - [git submodule update --init --recursive, Fetching dotbot submodules]
     - [sudo ./bash-scripts/core-utils.sh, Installing core utils]
+    - [cat ./configs/gterminal.preferences| dconf load /org/gnome/terminal/, Set gnome-terminal preferences]
     
     - command: ./bash-scripts/docker-install.sh
       stdin: true
