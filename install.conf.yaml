@@ -51,16 +51,15 @@
 #       stdin: true
 #       stdout: true
 #       description: Vim plugins installation
+#     - command: ./bash-scripts/go-stuff.sh
+#       stdin: true
+#       stdout: true
+#       description: Installing Go stuff
 
     - command: ./bash-scripts/js-stuff.sh
       stding: true
       stdout: true
       description: Installing Nodejs 16 LTS
-
-    - command: ./bash-scripts/go-stuff.sh
-      stdin: true
-      stdout: true
-      description: Installing Go stuff
          
     - command: ./bash-scripts/zsh-config.sh
       stdin: true
