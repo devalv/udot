@@ -28,12 +28,8 @@
 
 - shell:
     - [git submodule update --init --recursive, Fetching dotbot submodules]
-
-    - command: ./bash-scripts/core-utils.sh
-      stdin: true
-      stdout: true
-      description: Installing core utils
-
+    - [./bash-scripts/core-utils.sh, Installing core utils]
+    
     - command: ./bash-scripts/docker-install.sh
       stdin: true
       stdout: true
@@ -53,8 +49,6 @@
       stding: true
       stdout: true
       description: Installing Nodejs 16 LTS
-
-    - [cat -p ./configs/gterminal.preferences| dconf load /org/gnome/terminal/, Set gnome-terminal preferences]
 
     - command: ./bash-scripts/kube-utils.sh
       stdin: true
