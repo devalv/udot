@@ -62,10 +62,7 @@
       stdout: true
       description: Installing Nodejs 16 LTS
          
-    - command: ./bash-scripts/zsh-config.sh
-      stdin: true
-      stdout: true
-      description: Configure ZSH
+    - [rm -rf ~/.oh-my-zsh && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Configure ZSH]
           
     - command: ./bash-scripts/python-stuff.sh
       stdin: true
