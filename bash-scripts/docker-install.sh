@@ -34,4 +34,8 @@ echo "configure Docker to start on boot"
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 
+echo "install docker desktop"
+sudo apt-get install gnome-terminal
+wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.11.0-amd64.deb && sudo apt-get install ./docker-desktop-4.11.0-amd64.deb && rm docker-desktop-4.11.0-amd64.deb
+
 exit 0
