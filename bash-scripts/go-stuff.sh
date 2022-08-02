@@ -3,7 +3,8 @@
 set -e
 
 echo "installing golang"
-sudo apt-get install golang -y
+#TODO: install from https://go.dev/dl/
+#sudo apt-get install golang -y
 
 echo "installing goimports"
 go install golang.org/x/tools/cmd/goimports@latest
