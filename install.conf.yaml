@@ -28,7 +28,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Fetching dotbot submodules]
-    - [./bash-scripts/core-utils.sh, Installing core utils]
+    - [sudo ./bash-scripts/core-utils.sh, Installing core utils]
     
     - command: ./bash-scripts/docker-install.sh
       stdin: true
