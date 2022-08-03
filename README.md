@@ -13,6 +13,7 @@ sudo apt-get install git -y && git clone https://github.com/devalv/udot .dotfile
 ## Notes
 
 ### Automated installation
+
 * [Zsh](https://www.zsh.org) with oh-my-zsh (https://ohmyz.sh)
 * [Terminator](https://terminator-gtk3.readthedocs.io/en/latest/)
 * [FiraCode](https://github.com/tonsky/FiraCode)
@@ -20,6 +21,7 @@ sudo apt-get install git -y && git clone https://github.com/devalv/udot .dotfile
 * [Nodejs 16 LTS](https://nodejs.org/dist/v16.16.0/node-v16.16.0-linux-x64.tar.xz)
 
 ### Should be installed manually
+
 * [Lens](https://k8slens.dev/)
 * [VSCode](https://code.visualstudio.com/docs/setup/linux)
 * [Pycharm](https://www.jetbrains.com/ru-ru/pycharm/download/#section=linux)

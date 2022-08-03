@@ -15,13 +15,12 @@ libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
 libncursesw5-dev xz-utils tk-dev gcc
 
 
-echo "removing existing pyenv installation"
-rm -rf /home/$USER/.pyenv
+#echo "removing existing pyenv installation"
+#rm -rf /home/$USER/.pyenv
 
-echo "installing pyenv"
-curl https://pyenv.run | bash
+#echo "installing pyenv"
+#curl https://pyenv.run | bash
 
-#TODO: disable pyenv by default?
 #echo "installing python 3.10.5 via pyenv"
 #/home/$USER/.pyenv/bin/pyenv install 3.10.5 -s
 
