@@ -1,6 +1,6 @@
 # Aleksei Devyatkin`s dotfiles
 
-This is a bootstrap of my working setup based on Ubuntu linux (22 LTS), based on the awesome [Dotbot](https://github.com/anishathalye/dotbot).
+Based on the awesome [Dotbot](https://github.com/anishathalye/dotbot).
 
 ## Run
 
@@ -28,4 +28,3 @@ sudo apt-get install git -y && git clone https://github.com/devalv/udot .dotfile
 * [Goland](https://www.jetbrains.com/ru-ru/go/download/#section=linux)
 * [DBeaver](https://dbeaver.io/download/)
 * [Insomnia](https://insomnia.rest/download)
-* [Balena](https://github.com/balena-io/etcher?d_id=8ecc9189-514f-4d5d-ad88-674f72577da9R#debian-and-ubuntu-based-package-repository-gnulinux-x86x64)
