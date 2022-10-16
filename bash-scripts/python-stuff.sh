@@ -27,8 +27,8 @@ libncursesw5-dev xz-utils tk-dev gcc
 #echo "Set Python 3.10.5 as global interpeter"
 #/home/$USER/.pyenv/bin/pyenv global 3.10.5
 
-echo "installing poetry"
-[ -z "$(dpkg -s poetry)" ] && curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+#echo "installing poetry"
+#[ -z "$(dpkg -s poetry)" ] && curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
 echo "add poetry completion for zsh"
 mkdir $ZSH_CUSTOM/plugins/poetry
