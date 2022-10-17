@@ -8,12 +8,7 @@ echo "set python3 as default if not installed"
 echo "installing pyenv additionals"
 sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev
-
-sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
-libncursesw5-dev xz-utils tk-dev gcc
-
+xz-utils tk-dev libffi-dev liblzma-dev make make gcc curl
 
 #echo "removing existing pyenv installation"
 #rm -rf /home/$USER/.pyenv
@@ -30,9 +25,9 @@ libncursesw5-dev xz-utils tk-dev gcc
 #echo "installing poetry"
 #[ -z "$(dpkg -s poetry)" ] && curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
-echo "add poetry completion for zsh"
-mkdir $ZSH_CUSTOM/plugins/poetry
-~/.poetry/bin/poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+#echo "add poetry completion for zsh"
+#mkdir $ZSH_CUSTOM/plugins/poetry
+#~/.poetry/bin/poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 
 echo "install my zshrc back"
 mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
