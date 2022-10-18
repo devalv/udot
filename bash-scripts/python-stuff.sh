@@ -23,14 +23,4 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 #echo "Set Python 3.10.5 as global interpeter"
 #/home/$USER/.pyenv/bin/pyenv global 3.10.5
 
-#echo "installing poetry"
-#[ -z "$(dpkg -s poetry)" ] && curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
-
-#echo "add poetry completion for zsh"
-#mkdir $ZSH_CUSTOM/plugins/poetry
-#~/.poetry/bin/poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
-
-#echo "install my zshrc back"
-#mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
-
 exit 0
