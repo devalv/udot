@@ -21,9 +21,6 @@ sudo apt-get install git -y && git clone https://github.com/devalv/udot .dotfile
 
 ### Should be installed manually
 
-* [Lens](https://k8slens.dev/)
-* [VSCode](https://code.visualstudio.com/docs/setup/linux)
-* [Pycharm](https://www.jetbrains.com/ru-ru/pycharm/download/#section=linux)
-* [Goland](https://www.jetbrains.com/ru-ru/go/download/#section=linux)
-* [DBeaver](https://dbeaver.io/download/)
-* [Insomnia](https://insomnia.rest/download)
+* Docker
+* Poetry || Pipenv || Go & Go tools
+* VSCode || Pycharm || Goland || DBeaver
