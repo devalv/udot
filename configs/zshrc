@@ -107,7 +107,7 @@ DEFAULT_USER="devalv"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias df="duf -only local"
+alias df="duf -only local -only-fs ext4,ntfs,fat32"
 alias ll="exa -alh"
 alias ls="exa -lh"
 alias cat="batcat"
