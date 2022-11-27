@@ -13,14 +13,14 @@ xz-utils tk-dev libffi-dev liblzma-dev make make gcc curl
 echo "installing pyenv"
 curl https://pyenv.run | bash
 
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+# echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+# echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+# echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 
-#echo "installing python 3.10.5 via pyenv"
-#/home/$USER/.pyenv/bin/pyenv install 3.10.5 -s
+# echo "installing python 3.10.5 via pyenv"
+# /home/$USER/.pyenv/bin/pyenv install 3.10.5 -s
 
-#echo "Set Python 3.10.5 as global interpeter"
-#/home/$USER/.pyenv/bin/pyenv global 3.10.5
+# echo "Set Python 3.10.5 as global interpeter"
+# /home/$USER/.pyenv/bin/pyenv global 3.10.5
 
 exit 0

@@ -34,4 +34,4 @@
     - command: ./bash-scripts/js-stuff.sh
       stdin: true
       stdout: true
-      description: Installing Nodejs 16 LTS
+      description: Installing Nodejs 18 LTS
