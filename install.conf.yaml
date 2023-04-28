@@ -27,6 +27,9 @@
     - [git submodule update --init --recursive, Fetching dotbot submodules]
     - [sudo ./bash-scripts/core-utils.sh, Installing core utils]
     - [cat ./configs/gterminal.preferences| dconf load /org/gnome/terminal/, Set gnome-terminal preferences]
+    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      stdin: true
+      stdout: true
     - command: ./bash-scripts/python-stuff.sh
       stdin: true
       stdout: true
