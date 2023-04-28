@@ -8,6 +8,6 @@ jsonlint yamllint fzf pwgen neovim mc telnet p7zip-full rar \
 unrar terminator vlc openssh-client default-jre duf \
 fonts-firacode -y
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 exit 0
