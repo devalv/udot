@@ -19,6 +19,9 @@ sudo apt-get install git -y && git clone https://github.com/devalv/udot .dotfile
 * [FiraCode](https://github.com/tonsky/FiraCode)
 * [Nodejs 18 LTS](https://nodejs.org/)
 
+### Post config
+Check .zshrc, maybe new installation moved old config.
+
 ### Should be installed manually
 
 * Docker
