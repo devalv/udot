@@ -25,4 +25,4 @@
     - sudo apt-get install python-is-python3 build-essential libssl-dev zlib1g-dev \
       libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev \
       gcc make liblzma-dev libffi-dev tk-dev xz-utils -y
-    - [chsh -s $(which zsh), Making zsh the default shell]
+    - chsh -s $(which zsh)
