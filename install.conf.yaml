@@ -4,37 +4,25 @@
 
 - clean: ['~']
 
-
 - create:
     - ~/.config
-    - ~/.config/terminator
 
 - link:
-    ~/.config/terminator/config:
-      force: true
-      path: configs/terminator/config
-    ~/.cookiecutterrc: configs/cookiecutterrc
     ~/.editorconfig: configs/editorconfig
-    ~/.flake8: configs/flake8
-    ~/.gitconfig: 
+    ~/.gitconfig:
       force: true
       path: configs/gitconfig
-    ~/.zshrc: 
+    ~/.zshrc:
       force: true
       path: configs/zshrc
 
 - shell:
     - [git submodule update --init --recursive, Fetching dotbot submodules]
-    - [sudo ./bash-scripts/core-utils.sh, Installing core utils]
-    - [cat ./configs/gterminal.preferences| dconf load /org/gnome/terminal/, Set gnome-terminal preferences]
-    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-      stdin: true
-      stdout: true
-    - command: ./bash-scripts/python-stuff.sh
-      stdin: true
-      stdout: true
-      description: Installing Python stuff
-    - command: ./bash-scripts/js-stuff.sh
-      stdin: true
-      stdout: true
-      description: Installing Nodejs 18 LTS
+    - sudo apt-get update
+    - sudo apt-get install git zsh exa curl wget tmux bpytop bat gnupg \
+      jsonlint yamllint neovim mc p7zip-full openssh-client default-jre duf \
+      fonts-firacode -y
+    - sudo apt-get install python-is-python3 build-essential libssl-dev zlib1g-dev \
+      libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev \
+      gcc make liblzma-dev libffi-dev tk-dev xz-utils -y
+    - [chsh -s $(which zsh), Making zsh the default shell]
