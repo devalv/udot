@@ -29,6 +29,3 @@
         gcc make liblzma-dev libffi-dev tk-dev xz-utils -y
       stdin: true
       stdout: true
-    - command: chsh -s $(which zsh)
-      stdin: true
-      stdout: true
