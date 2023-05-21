@@ -5,7 +5,7 @@ Based on the awesome [Dotbot](https://github.com/anishathalye/dotbot).
 Pull this repo and run install:
 
 ```shell
-cd ~ && git clone https://github.com/devalv/udot .dotfiles && cd .dotfiles && ./install
+cd ~ && git clone https://github.com/devalv/udot .dotfiles && cd .dotfiles && ./install && cd ~
 ```
 
 ## Notes

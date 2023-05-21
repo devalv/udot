@@ -19,10 +19,16 @@
 - shell:
     - [git submodule update --init --recursive, Fetching dotbot submodules]
     - sudo apt-get update
-    - sudo apt-get install git zsh exa curl wget tmux bpytop bat gnupg \
-      jsonlint yamllint neovim mc p7zip-full openssh-client default-jre duf \
-      fonts-firacode -y
-    - sudo apt-get install python-is-python3 build-essential libssl-dev zlib1g-dev \
-      libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev \
-      gcc make liblzma-dev libffi-dev tk-dev xz-utils -y
-    - chsh -s $(which zsh)
+    - command: sudo apt-get install git zsh exa curl wget tmux bpytop bat gnupg
+        jsonlint yamllint neovim mc p7zip-full openssh-client default-jre duf
+        fonts-firacode -y
+      stdin: true
+      stdout: true
+    - command: sudo apt-get install python-is-python3 build-essential libssl-dev zlib1g-dev
+        libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev
+        gcc make liblzma-dev libffi-dev tk-dev xz-utils -y
+      stdin: true
+      stdout: true
+    - command: chsh -s $(which zsh)
+      stdin: true
+      stdout: true
